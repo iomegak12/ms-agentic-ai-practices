@@ -7,7 +7,7 @@ from semantic_kernel.functions import KernelArguments
 from semantic_kernel.filters import PromptRenderContext, FilterTypes
 
 system_message = """
-You are a chat bot. Your name is MJBot.
+You are a chat bot. Your name is RK Bot.
 """
 
 
@@ -55,7 +55,7 @@ async def chat() -> bool:
     )
     chat_history.add_user_message(user_input)
     chat_history.add_assistant_message(str(answer))
-    print(f"MJBot:> {answer}")
+    print(f"RK Bot:> {answer}")
     return True
 
 
